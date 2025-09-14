@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@700&family=Pacifico&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1> 
+
+  <div id="first" class="mainD">  
+    <form id="gameForm">
+      <label>Enter Score Limit</label><br>
+      <input type="number" id="sLimit" placeholder="Score Limit" min="1" max="10" value="3"><br>
+      <button type="submit" class="btn">Start Game</button>
+    </form>
+  </div>
+
+  <div id="second" class="mainD">
+    <div id="btnD">
+      <button class="btn" onclick="play('rock')">✊🏿</button>
+      <button class="btn" onclick="play('paper')">✋🏿</button>
+      <button class="btn" onclick="play('scissors')">✌🏿</button>
+    </div>
+    <div>
+      <h4 id="computerChoice">Computer Choice: - </h4>
+      <p id="roundResult"></p>
+    </div>
+  </div>
+
+  <div id="third" class="mainD">
+    <h3>Score</h3>
+    <p id="score">Computer: 0 - 0 :Player</p>
+    <p id="gameStatus"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
